@@ -34,6 +34,15 @@ body {
     margin: 0 auto;
 }
 
+.blogs_center2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    width: var(--fluid-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
 .blog {
     background-color: white;
     padding: 1rem;
