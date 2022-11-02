@@ -89,7 +89,15 @@ body {
 }
 
 .blog-content p {
+    /* <<<<<<< HEAD */
     color: var(--grey);
+    /* ======= */
+    /* <<<<<<< HEAD */
+    /* color: var(--grey); */
+    /* ======= */
+    /* color:var(--grey); */
+    /* >>>>>>> b41fa91996a8882184151bf22ef8d369086e732d */
+    /* >>>>>>> 6d7b7a0668c033639b8ccb379d461b1e39fa2a6f */
     margin: 0.5rem;
 }
 
