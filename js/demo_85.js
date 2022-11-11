@@ -21,7 +21,7 @@ function showpage(index) {
       p.innerHTML = `<iframe src="./demo/w08/landing_85.html" style="display:block; border:none; width:100%; height:100%;"></iframe>`
       break;
     case 6:
-      p.innerHTML = `<iframe src="./demo/w09/multipage_85.html" style="display:block; border:none; width:100%; height:100%;"></iframe>`
+      p.innerHTML = `<iframe src="./demo/w09/resume_85.html" style="display:block; border:none; width:100%; height:100%;"></iframe>`
       break;
   }
 }
