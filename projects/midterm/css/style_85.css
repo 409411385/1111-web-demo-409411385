@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color:rgb(235, 235, 235) ;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* 
+=============== 
+Navbar
+===============
+*/
+
+.nav {
+  /* flex */
+  display: flex;
+  align-items: center;
+  /* style */
+  height: 4rem;
+  border-bottom: 1px solid var(--clr-grey-3);
+  background-color: white;
+}
+
+.nav-center {
+  /* flex */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* style */
+  width: 100%;
+}
+
+.nav-header a{
+  /* flex */
+  display: flex;
+  align-items: center;
+  /* style */
+  gap: 10px;
+  font-size: 30px;
+  color: #13ab67;
+}
+
+.nav-header img{
+  height:3rem;
+}
+
+.nav-links {
+  /* flex */
+  display: flex;
+  align-items: center;
+  /* style */
+  gap: 2rem;
+}
+
+.nav-links a{
+  /* flex */
+  display: flex;
+  align-items: center;
+  /* style */
+  gap: 5px;
+}
+
+.nav-links img {
+  height: 2rem;
+}
+
+.show-classdemo {
+  height: calc(100vh - 4rem);
+}
