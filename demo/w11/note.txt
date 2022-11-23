@@ -1,0 +1,1 @@
+sass --watch demo/w12/portfolio/scss:demo/w12/portfolio/css

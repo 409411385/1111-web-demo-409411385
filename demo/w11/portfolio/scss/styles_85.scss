@@ -1,0 +1,38 @@
+@use 'global_xx';
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: var(--clr-primary-10);
+  transition: var(--transition);
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .nav-header h3 {
+    padding-top: 0.7rem;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    right: 3rem;
+  }
+}

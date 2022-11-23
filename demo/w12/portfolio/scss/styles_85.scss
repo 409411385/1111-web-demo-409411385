@@ -1,0 +1,56 @@
+@use 'global_85';
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: var(--clr-primary-10);
+  transition: var(--transition);
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .nav-header h3 {
+    padding-top: 0.7rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-btn {
+    position: absolute;
+    right: 1.5rem;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2rem;
+    color: var(--clr-primary-5);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1.5rem;
+      position: absolute;
+      right: 3rem;
+    }
+  }
+}
