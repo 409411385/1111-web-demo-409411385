@@ -160,6 +160,11 @@ p {
   max-width: 1170px;
 }
 
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 .social-icons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -172,10 +177,22 @@ p {
   font-size: 1.5rem;
   color: var(--clr-grey-6);
   transition: var(--transition);
-  
+
   &:hover {
     color: var(--clr-primary-5);
   }
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.bg-grey {
+  background-color: var(--clr-grey-10);
 }
 
 @media screen and (min-width: 992px) {
