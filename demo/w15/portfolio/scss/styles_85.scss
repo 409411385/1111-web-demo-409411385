@@ -301,4 +301,136 @@ About
   }
 }
 
+/*
+=============== 
+Projects
+===============
+*/
 
+.projects {
+  &-text {
+    width: 85vw;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .project {
+    position: relative;
+    background-color: var(--clr-primary-5);
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border: 0.25rem solid var(--clr-white);
+      border-radius: var(--radius);
+      transition: var(--transition);
+      opacity: 0;
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scale(0.8);
+    }
+    &:hover .project-info {
+      opacity: 1;
+    }
+    &:hover .project-img {
+      opacity: 0.1;
+    }
+    &-img {
+      height: 15rem;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+    &-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      color: var(--clr-white);
+      transform: translate(-50%, -50%);
+      transition: var(--transition);
+      opacity: 0;
+      p {
+        color: var(--clr-white);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    &-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects {
+    &-center {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1178px) {
+  .projects {
+    &-center {
+      grid-template-rows: 15rem 15rem;
+      gap: 1rem;
+      grid-template-areas:
+        "a b b"
+        "a c d";
+      .project {
+        height: 100%;
+        &-img {
+          height: 100%;
+        }
+        &-1 {
+          grid-area: a;
+        }
+        &-2 {
+          grid-area: b;
+        }
+        &-3 {
+          grid-area: c;
+        }
+        &-4 {
+          grid-area: d;
+        }
+      }
+    }
+  }
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+.footer {
+  padding-bottom: 1rem;
+  background: #222;
+  display: grid;
+  place-items: center;
+  .social-icons {
+    margin-bottom: 1rem;
+  }
+  .social-icon {
+    color: var(--clr-primary-5);
+    &:hover {
+      color: var(--clr-primary-10);
+    }
+  }
+  p {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+  }
+}
