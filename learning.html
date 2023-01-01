@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe || About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles_85.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav" id="nav">
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <img src="./images/graduated.png" alt="" title="" />
+        <h3>409411385</h3>
+      </div>
+      <!-- nav-links -->
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">hero</a>
+        </li>
+        <li>
+          <a href="works.html">works</a>
+        </li>
+        <li>
+          <a href="resume.html">resume</a>
+        </li>
+        <li>
+          <a href="learning.html">learning</a>
+        </li>
+        <li>
+          <a href="#">demo</a>
+        </li>
+      </ul>
+      <button class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about_85.html">about</a>
+        </li>
+        <li>
+          <a href="projects_85.html">projects</a>
+        </li>
+        <li>
+          <a href="contact_85.html">contact</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- end of sidebar -->
+
+  <div class="scene_3d" id="scene_3d"></div>
+  <div class="learning">
+    <p>
+      問題解決：
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      自主學習：
+    </p>
+    <p>
+      這次我學習了如何透過使用three.js在網頁中建立3d場景，並加入3d模型。
+    </p>
+    <p>
+      學習心得：
+    </p>
+    <p>
+      這是我第一次在程式中接觸到有關3D的場景的建立，當中有十分大量的參數可以去做設定，從一開始的建立場景，設定鏡頭，設定渲染，
+      設定動畫，加入3D模型等等，都有十分大量參數需做設定，依照網路上的教學可以理解基本架構的程式碼，
+      但是3D模組的應用範圍十分廣泛，甚至我們可以透過three js做出3D遊戲，在這些比較深入的應用當中，
+      我們需要跟3D場景做許多互動，需要使用到三角函數、旋轉矩陣控制鏡頭在三維空間中的位置與方向，
+      雖然在這次的期末報告中我還沒辦法做出太高深的3D應用，但是在學習的過程中我第一看到數學應用在程式中，
+      這讓我實際感受到了數學對於程式設計的重要性，這提醒了我必須認真學習數學，
+      才不會在未來讓數學成為我在程式設計上的障礙。
+    </p>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <!-- social icons -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com" class="social-icon">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <p>&copy; <span id="date"></span> JIANG , YI-XUAN. All rights reserved.</p>
+  </footer>
+  <script src="./js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="./js/3d.js"></script>
+</body>
+
+</html>

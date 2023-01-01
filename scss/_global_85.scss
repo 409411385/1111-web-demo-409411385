@@ -18,13 +18,15 @@ Variables
   --clr-primary-3: hsl(43, 72%, 37%);
   --clr-primary-4: hsl(42, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  // --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-5: hsl(108, 52%, 46%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 90%, 76%);
   --clr-primary-8: hsl(45, 86%, 81%);
   --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  // --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-10: hsl(104, 90%, 96%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -73,10 +75,10 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-}
+// img:not(.nav-logo) {
+//   width: 100%;
+//   display: block;
+// }
 
 h1,
 h2,
@@ -159,6 +161,42 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 3rem;
+  width: 20rem;
+  place-items: center;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--clr-grey-6);
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--clr-primary-5);
+  }
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-5);
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.bg-grey {
+  background-color: var(--clr-grey-10);
+}
+
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
